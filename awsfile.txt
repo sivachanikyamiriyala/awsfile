@@ -1,0 +1,20 @@
+lsblk -->listing of all block id's--how many volumes attached to present instance
+mkfs --->to create a file sydtem
+mkfs -t ext4  -->t for specifying the type of file system
+mount /dev/xvdf /siva --> to create a mount mount point between xvdf and siva
+umount /dev/xvdf -->mounting is removed
+------********---------
+snapshots&volumes:
+.from volume snapshot is created
+.volumes can be directly attached to instances.
+.snapshot cant be directly attached to instance.
+.to attach a volume to instance both must be in the same azs
+.for region to region migration we creata a copy of the snapshot
+.from snapshot we can create volumes in any where and what ever the azs
+---->blkid,du,df-----<<<<<
+****blkid:to check the file system is present or not
+      if you do the file system again the previous file system including files will be vanished(over written)
+**du:disk usage of present working direc(pwd)
+**df : disk statistics of the attached volumes.
+
+
